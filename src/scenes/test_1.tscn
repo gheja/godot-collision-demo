@@ -1,0 +1,484 @@
+[gd_scene load_steps=20 format=3 uid="uid://bswup1l4h352w"]
+
+[ext_resource type="Script" uid="uid://culb5y7dttmje" path="res://scenes/test_1.gd" id="1_p1gcm"]
+[ext_resource type="Material" uid="uid://brb7dael5jxjl" path="res://materials/mat2.tres" id="2_qm5my"]
+[ext_resource type="Texture2D" uid="uid://cm8w5de0hq7o1" path="res://3rdparty/sprites/godot_logo/logo_large_monochrome_dark_250.png" id="3_b5onc"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_21imr"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p1gcm"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qm5my"]
+albedo_color = Color(1, 0.784314, 0.588235, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uxpu0"]
+albedo_color = Color(1, 0.784314, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rbj8j"]
+albedo_color = Color(1, 0.784314, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hidvt"]
+albedo_color = Color(1, 0.784314, 1, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_b5onc"]
+size = Vector3(12, 1, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_p1gcm"]
+size = Vector3(5, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_21imr"]
+albedo_color = Color(1, 0.392157, 0.392157, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qm5my"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_21imr"]
+size = Vector3(12, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b5onc"]
+albedo_color = Color(0.588235, 1, 1, 1)
+
+[sub_resource type="Environment" id="Environment_21imr"]
+
+[sub_resource type="Animation" id="Animation_qm5my"]
+resource_name = "idle"
+length = 15.0
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ObjectContainer/Ball1:process_mode")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ObjectContainer/Ball2:process_mode")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(3),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ObjectContainer/Ball3:process_mode")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(5),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ObjectContainer/Ball4:process_mode")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(7),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ObjectContainer/Ball5:process_mode")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(9),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("ObjectContainer/Ball6:process_mode")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(11),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("ObjectContainer/Ball7:process_mode")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(13),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_b5onc"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ObjectContainer/Ball1:process_mode")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [4]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ObjectContainer/Ball2:process_mode")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [4]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ObjectContainer/Ball3:process_mode")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [4]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ObjectContainer/Ball4:process_mode")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [4]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ObjectContainer/Ball5:process_mode")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [4]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("ObjectContainer/Ball6:process_mode")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [4]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("ObjectContainer/Ball7:process_mode")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [4]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_uxpu0"]
+_data = {
+&"RESET": SubResource("Animation_b5onc"),
+&"idle": SubResource("Animation_qm5my")
+}
+
+[node name="Test1" type="Node3D"]
+script = ExtResource("1_p1gcm")
+
+[node name="ObjectContainer" type="Node3D" parent="."]
+
+[node name="Ball1" type="RigidBody3D" parent="ObjectContainer"]
+process_mode = 4
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 4, 0)
+gravity_scale = 0.5
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ObjectContainer/Ball1"]
+shape = SubResource("SphereShape3D_21imr")
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="ObjectContainer/Ball1"]
+radial_segments = 24
+rings = 12
+material = SubResource("StandardMaterial3D_p1gcm")
+
+[node name="Area3D" type="Area3D" parent="ObjectContainer/Ball1"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="ObjectContainer/Ball1/Area3D"]
+shape = SubResource("SphereShape3D_21imr")
+
+[node name="Ball2" type="RigidBody3D" parent="ObjectContainer"]
+process_mode = 4
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 4, 0)
+collision_layer = 3
+collision_mask = 3
+gravity_scale = 0.5
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ObjectContainer/Ball2"]
+shape = SubResource("SphereShape3D_21imr")
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="ObjectContainer/Ball2"]
+radial_segments = 24
+rings = 12
+material = SubResource("StandardMaterial3D_qm5my")
+
+[node name="Ball3" type="RigidBody3D" parent="ObjectContainer"]
+process_mode = 4
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+collision_layer = 3
+collision_mask = 3
+gravity_scale = 0.5
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ObjectContainer/Ball3"]
+shape = SubResource("SphereShape3D_21imr")
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="ObjectContainer/Ball3"]
+radial_segments = 24
+rings = 12
+material = SubResource("StandardMaterial3D_qm5my")
+
+[node name="Ball4" type="RigidBody3D" parent="ObjectContainer"]
+process_mode = 4
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.499564, 4.91684, 0)
+collision_layer = 3
+collision_mask = 3
+gravity_scale = 0.5
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ObjectContainer/Ball4"]
+shape = SubResource("SphereShape3D_21imr")
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="ObjectContainer/Ball4"]
+radial_segments = 24
+rings = 12
+material = SubResource("StandardMaterial3D_qm5my")
+
+[node name="Ball5" type="RigidBody3D" parent="ObjectContainer"]
+process_mode = 4
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 4, 0)
+collision_layer = 0
+collision_mask = 3
+gravity_scale = 0.5
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ObjectContainer/Ball5"]
+shape = SubResource("SphereShape3D_21imr")
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="ObjectContainer/Ball5"]
+radial_segments = 24
+rings = 12
+material = SubResource("StandardMaterial3D_uxpu0")
+
+[node name="Ball6" type="RigidBody3D" parent="ObjectContainer"]
+process_mode = 4
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 4, 0)
+collision_layer = 0
+collision_mask = 3
+gravity_scale = 0.5
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ObjectContainer/Ball6"]
+shape = SubResource("SphereShape3D_21imr")
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="ObjectContainer/Ball6"]
+radial_segments = 24
+rings = 12
+material = SubResource("StandardMaterial3D_rbj8j")
+
+[node name="Ball7" type="RigidBody3D" parent="ObjectContainer"]
+process_mode = 4
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.49956, 4.91684, 0)
+collision_layer = 0
+collision_mask = 3
+gravity_scale = 0.5
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ObjectContainer/Ball7"]
+shape = SubResource("SphereShape3D_21imr")
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="ObjectContainer/Ball7"]
+radial_segments = 24
+rings = 12
+material = SubResource("StandardMaterial3D_hidvt")
+
+[node name="PlayerInteraction" type="Node3D" parent="ObjectContainer"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+
+[node name="PlayerInteractionArea" type="Area3D" parent="ObjectContainer/PlayerInteraction"]
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ObjectContainer/PlayerInteraction/PlayerInteractionArea"]
+shape = SubResource("BoxShape3D_b5onc")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="ObjectContainer/PlayerInteraction"]
+size = Vector3(12, 1, 1)
+material = ExtResource("2_qm5my")
+
+[node name="EnemyFloor" type="StaticBody3D" parent="ObjectContainer"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 0, 0)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ObjectContainer/EnemyFloor"]
+shape = SubResource("BoxShape3D_p1gcm")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="ObjectContainer/EnemyFloor"]
+size = Vector3(5, 1, 1)
+material = SubResource("StandardMaterial3D_21imr")
+
+[node name="EnemyFloor2" type="StaticBody3D" parent="ObjectContainer"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ObjectContainer/EnemyFloor2"]
+shape = SubResource("BoxShape3D_qm5my")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="ObjectContainer/EnemyFloor2"]
+material = SubResource("StandardMaterial3D_21imr")
+
+[node name="StaticFloor" type="StaticBody3D" parent="ObjectContainer"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3, 0)
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ObjectContainer/StaticFloor"]
+shape = SubResource("BoxShape3D_21imr")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="ObjectContainer/StaticFloor"]
+size = Vector3(12, 1, 1)
+material = SubResource("StandardMaterial3D_b5onc")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.991326, 0.131426, 0, -0.131426, 0.991326, 0, 3, 11)
+fov = 50.0
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_21imr")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.900827, 1.49012e-08, 0.434178, -0.303605, 0.714863, 0.629916, -0.310378, -0.699264, 0.643968, 0, 6, 8)
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 32.0
+offset_right = 770.0
+offset_bottom = 629.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.392157)
+bbcode_enabled = true
+text = "[color=#ffffff][font=res://3rdparty/fonts/ubuntu_mono/UbuntuMono-B.ttf]Layer 1 _ _   Mask 1 _ _ [/font]  -- [RigidBody3D] Player[/color]
+[color=#ffffff][font=res://3rdparty/fonts/ubuntu_mono/UbuntuMono-B.ttf]Layer _ _ 3   Mask _ _ _ [/font]       -- [Area3D] Player interaction area (child of the Player)[/color]
+[color=#ffc896][font=res://3rdparty/fonts/ubuntu_mono/UbuntuMono-B.ttf]Layer 1 2 _   Mask 1 2 _ [/font]  -- [RigidBody3D] Enemy[/color]
+[color=#ffc8ff][font=res://3rdparty/fonts/ubuntu_mono/UbuntuMono-B.ttf]Layer _ _ _   Mask 1 2 _ [/font]  -- [RigidBody3D] Enemy (without enemy-enemy collision)[/color]
+[color=#88ff88][font=res://3rdparty/fonts/ubuntu_mono/UbuntuMono-B.ttf]Layer _ _ _   Mask _ _ 3 [/font]  -- [Area3D] Interactive area[/color]
+[color=#ff6464][font=res://3rdparty/fonts/ubuntu_mono/UbuntuMono-B.ttf]Layer _ 2 _   Mask _ _ _ [/font]  -- [StaticBody3D] Enemy obstacle (eg. player building)[/color]
+[color=#96ffff][font=res://3rdparty/fonts/ubuntu_mono/UbuntuMono-B.ttf]Layer 1 _ _   Mask _ _ _ [/font]  -- [StaticBody3D] World obstacle (eg. ground, tree)[/color]
+
+[color=#cccccc]Layers in this demo:
+  Layer 1 -- For world collision
+  Layer 2 -- For enemy-only collision
+  Layer 3 -- For player interaction[/color]
+
+[color=#ccc]For interaction (checked by the area, \"is anybody here?\"):
+  Layer: the object
+  Mask: the area
+
+For two-way collision: set both Layer and Mask.
+
+For one-way collision (checked by object physics, \"can I move?\"):
+  Layer: the obstacle
+  Mask: the object[/color]
+"
+
+[node name="CheckBox" type="CheckBox" parent="Control"]
+layout_mode = 0
+offset_right = 24.0
+offset_bottom = 24.0
+button_pressed = true
+text = "Show legend"
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+modulate = Color(1, 1, 1, 0.392157)
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -81.0
+offset_right = 200.0
+grow_vertical = 0
+texture = ExtResource("3_b5onc")
+
+[node name="Label" type="Label" parent="Control"]
+modulate = Color(1, 1, 1, 0.392157)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -104.0
+offset_top = -39.0
+offset_right = -16.0
+offset_bottom = -16.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "gheja, 2025"
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 16.0
+autostart = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_uxpu0")
+}
+autoplay = "idle"
+
+[connection signal="area_entered" from="ObjectContainer/PlayerInteraction/PlayerInteractionArea" to="." method="_on_player_interaction_area_area_entered"]
+[connection signal="area_exited" from="ObjectContainer/PlayerInteraction/PlayerInteractionArea" to="." method="_on_player_interaction_area_area_exited"]
+[connection signal="toggled" from="Control/CheckBox" to="." method="_on_check_box_toggled"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
