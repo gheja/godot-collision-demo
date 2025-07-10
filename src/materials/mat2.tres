@@ -1,7 +1,11 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://brb7dael5jxjl"]
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://brb7dael5jxjl"]
+
+[ext_resource type="Texture2D" uid="uid://cg2wnc0vq8sn0" path="res://assets/checker_texture_tick_128.png" id="1_vhpr6"]
 
 [resource]
 transparency = 1
 blend_mode = 1
 no_depth_test = true
 albedo_color = Color(1, 1, 0.533333, 0.266667)
+albedo_texture = ExtResource("1_vhpr6")
+uv1_triplanar = true
